@@ -1,0 +1,56 @@
+:root {
+  --background-color: #ffffff;
+  --secodary-background-color: #f0f0f0;
+  --text-color: #000000;
+  --primary-color: #007bff;
+}
+
+body {
+  margin: 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: "Roboto", serif;
+}
+body:has(#darkmode-toggle:checked) {
+    --background-color: #252525;
+    --secodary-background-color: #565656;
+    --text-color: #ffffff;
+    --primary-color: #1e90ff;
+}
+
+nav {
+  background-color: var(--secodary-background-color);
+  border-bottom: solid 4px var(--primary-color);
+  display: flex;
+  align-items: center;
+  padding: 0px 16px;
+}
+
+nav a {
+  padding: 14px 16px;
+  text-decoration: none;
+  color: var(--text-color);
+  transition: 300ms;
+}
+
+nav a:hover {
+  background-color: var(--background-color);
+}
+.theme-toggle {
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.theme-toggle input {
+  display: none;
+}
+
+.toggle-darkmode {
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  background: url("img/moon-icon.svg") no-repeat center center / contain;
+}
+#darkmode-toggle:checked + .toggle-darkmode {
+  background: url("img/sun-icon.svg") no-repeat center center / contain;
+}
