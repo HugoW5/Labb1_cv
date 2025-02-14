@@ -1,8 +1,8 @@
 :root {
   --background-color: #ffffff;
-  --secodary-background-color: #f0f0f0;
+  --secodary-background-color: #b3b3b3;
   --text-color: #000000;
-  --primary-color: #007bff;
+  --primary-color: #4ca3ff;
 }
 
 body {
@@ -12,10 +12,10 @@ body {
   font-family: "Roboto", serif;
 }
 body:has(#darkmode-toggle:checked) {
-    --background-color: #252525;
-    --secodary-background-color: #565656;
-    --text-color: #ffffff;
-    --primary-color: #1e90ff;
+  --background-color: #252525;
+  --secodary-background-color: #565656;
+  --text-color: #ffffff;
+  --primary-color: #1e90ff;
 }
 
 nav {
@@ -32,7 +32,9 @@ nav a {
   color: var(--text-color);
   transition: 300ms;
 }
-
+nav a.active {
+  background-color: var(--primary-color);
+}
 nav a:hover {
   background-color: var(--background-color);
 }
@@ -53,4 +55,64 @@ nav a:hover {
 }
 #darkmode-toggle:checked + .toggle-darkmode {
   background: url("img/sun-icon.svg") no-repeat center center / contain;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+  align-content: center;
+}
+
+.top-container {
+  margin-top: 30px;
+  max-width: 700px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  background-color: var(--secodary-background-color);
+}
+.top-bottom-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-top: solid 4px var(--background-color);
+}
+.top-bottom-container li {
+  padding: 10px;
+}
+.top-bottom-container .time-span {
+  margin: 5px;
+  padding: 5px;
+  background-color: var(--primary-color);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.container-header{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.container-header img{
+  width: 30px;
+}
+
+footer {
+  margin: 0;
+  padding: 10px;
+  background-color: var(--secodary-background-color);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+footer > div {
+  margin: 20px;
+  max-width: 600px;
 }
