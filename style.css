@@ -51,10 +51,10 @@ nav a:hover {
   width: 32px;
   height: 32px;
   display: inline-block;
-  background: url("img/moon-icon.svg") no-repeat center center / contain;
+  background: url("img/icons/moon-icon.svg") no-repeat center center / contain;
 }
 #darkmode-toggle:checked + .toggle-darkmode {
-  background: url("img/sun-icon.svg") no-repeat center center / contain;
+  background: url("img/icons/sun-icon.svg") no-repeat center center / contain;
 }
 main {
   display: flex;
@@ -66,7 +66,7 @@ main {
 
 .top-container {
   margin-top: 30px;
-  max-width: 700px;
+  max-width: 800px;
   padding: 20px;
   display: flex;
   justify-content: center;
@@ -95,13 +95,28 @@ main {
   -o-border-radius: 20px;
 }
 
-.container-header{
+.container-header {
   display: flex;
   align-items: center;
   gap: 20px;
 }
-.container-header img{
+.container-header img {
   width: 30px;
+}
+
+.projects-container {
+  margin-top: 30px;
+  display: flex;
+  background-color: var(--secodary-background-color);
+}
+.project .title{
+  padding-left: 20px;
+}
+.thumbnail>img{
+  max-width: 400px;
+}
+.stack > img{
+  width: 32px;
 }
 
 footer {
