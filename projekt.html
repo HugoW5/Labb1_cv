@@ -10,6 +10,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="modal.css" />
     <title>CV - Projekt</title>
   </head>
   <body>
@@ -37,17 +38,178 @@
       </div>
       <div class="projects-container">
         <div class="project">
-            <div class="title">
-                <h2>Grafritare</h2>
+          <div class="title">
+            <h2>Grafritare</h2>
+          </div>
+          <div class="thumbnail">
+            <img src="img/grafriatre_thumb.png" alt="" />
+          </div>
+          <div class="stack">
+            <img src="img/icons/html5-icon.svg" alt="HTML5 Icon" />
+            <img src="img/icons/css-icon.svg" alt="Css Icon" />
+            <img src="img/icons/javascript-icon.svg" alt="Javascript icon" />
+          </div>
+          <p class="description">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae
+            temporibus omnis voluptatibus itaque excepturi aperiam maxime qui,
+            suscipit ad quo.
+          </p>
+          <input type="checkbox" id="modal1" />
+          <label for="modal1" class="example-label">Läs mer</label>
+          <label for="modal1" class="modal-background"></label>
+          <div class="modal">
+            <div class="modal-header">
+              <h3>Grafritare</h3>
+              <label for="modal1">
+                <img
+                  src="img/icons/x-icon.svg"
+                  height="16"
+                  width="16"
+                  alt="Close modal icon"
+                />
+              </label>
             </div>
-            <div class="thumbnail">
-                <img src="img/grafriatre_thumb.png" alt="">
+            <img
+              src="img/grafriatre_thumb.png"
+              class="modal-img"
+              alt="grafritare bild"
+            />
+            <p>
+              En simpel grafritare byggd med HTML, CSS och Javascript.
+              Grafritaren använder Canvas elementet för att rendera grafen. Och
+              är anpassad för att läsa in JSON-data i det format som SCB
+              använder. Den stöder även att man läser in flera olika
+              grafer/dataset samtidigt sida vid sida. Man kan även redigera
+              graf-datan som man läst in direkt i webbsidan. Det går att
+              exportera grafen som en PNG.
+              <br />
+              <br />
+              Detta projekt gjorde jag i kursen webbutveckling 2 i gymnasiet
+              <br />
+              <br />
+              <a href="https://github.com/hugo-w1/graph" target="_blank"
+                >https://github.com/hugo-w1/graph</a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="project">
+          <div class="title">
+            <h2>Social Media</h2>
+          </div>
+          <div class="thumbnail">
+            <img src="img/socialmeda-thumbnail.png" alt="Social media bild" />
+          </div>
+          <div class="stack">
+            <img src="img/icons/html5-icon.svg" alt="HTML5 Icon" />
+            <img src="img/icons/css-icon.svg" alt="Css Icon" />
+            <img src="img/icons/javascript-icon.svg" alt="Javascript icon" />
+            <img src="img/icons/nodejs-icon.svg" alt="Nodejs icon" />
+            <img src="img/icons/mongodb-icon.svg" alt="Mongo db icon" />
+          </div>
+          <p class="description">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae
+            temporibus omnis voluptatibus itaque excepturi aperiam maxime qui,
+            suscipit ad quo.
+          </p>
+          <input type="checkbox" id="modal2" />
+          <label for="modal2" class="example-label">Läs mer</label>
+          <label for="modal2" class="modal-background"></label>
+          <div class="modal">
+            <div class="modal-header">
+              <h3>Social Media</h3>
+              <label for="modal2">
+                <img
+                  src="img/icons/x-icon.svg"
+                  height="16"
+                  width="16"
+                  alt="Close modal icon"
+                />
+              </label>
             </div>
-            <div class="stack">
-                <img src="img/icons/html5-icon.svg" alt="HTML5 Icon">
-                <img src="img/icons/css-icon.svg" alt="Css Icon">
-                <img src="img/icons/javascript-icon.svg" alt="Javascript icon">
+            <img
+              src="img/socialmeda-thumbnail.png"
+              class="modal-img"
+              alt="social media bild"
+            />
+            <p>
+              En simpel social media platform byggd med HTML, CSS, Javascript i
+              frontend. Nodejs och Mongodb i backend. Stöder funktioner som att
+              registrera, logga in, lägga till & ta bort vänner, ladda upp
+              inlägg med bilder och text, kommentera på inlägg, gilla inlägg och
+              få aviseringar på webbsidan när någon har lagt till dig som vän
+              eller gillat ditt inlägg.
+              <br />
+              <br />
+              Projekt är byggt utan hjälp av webbserver ramverk som till exempel
+              Express.js. Allt är byggt från grunden med Nodejs HTTP-modulen
+              <br />
+              <br />
+              Detta projekt gjorde jag i kursen webbserverutveckling 1 i
+              gymnasiet
+              <br />
+              <br />
+              <a href="https://github.com/hugo-w1/SocialMedia" target="_blank"
+                >https://github.com/hugo-w1/SocialMedia</a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="project">
+          <div class="title">
+            <h2>CLUI</h2>
+          </div>
+          <div class="thumbnail">
+            <img src="img/CLUI.png" alt="Social media bild" />
+          </div>
+          <div class="stack">
+            <img src="img/icons/csharp-icon.svg" alt="Csharp Icon" />
+          </div>
+          <p class="description">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae
+            temporibus omnis voluptatibus itaque excepturi aperiam maxime qui,
+            suscipit ad quo.
+          </p>
+          <input type="checkbox" id="modal3" />
+          <label for="modal3" class="example-label">Läs mer</label>
+          <label for="modal3" class="modal-background"></label>
+          <div class="modal">
+            <div class="modal-header">
+              <h3>CLUI</h3>
+              <label for="modal3">
+                <img
+                  src="img/icons/x-icon.svg"
+                  height="16"
+                  width="16"
+                  alt="Close modal icon"
+                />
+              </label>
             </div>
+            <img src="img//CLUI.png" class="modal-img" alt="CLUI bild" />
+            <p>
+              Ett frontend biblioket till konsol applikationer. Byggt med C#.
+              Stöder funktioner som navigering mellan komponenter med TAB och Shift+Tab. 
+              Inmatning sker endast i komponenter som accepterar det som till exempel PasswordBox eller TextBox.
+              Har även stöd för dynamisk layout genom StackPanel och Grid komponenter. Horizontal Alignment och Vertical Alignment
+               kan användas för att justera placeringen av innehåll i komponenter.
+              <br />
+              <br />
+              <a href="https://github.com/HugoW5/CLUI" target="_blank"
+              >https://github.com/HugoW5/CLUI</a
+            >
+            <ul>
+              <li>Button</li>
+              <li>Label</li>
+              <li>Rect</li>
+              <li>TextBox</li>
+              <li>PasswordBox</li>
+              <li>CheckBox</li>
+              <li>Dropdown</li>
+              <li>GridPanel</li>
+              <li>StackPanel</li>
+            </ul>
+            </p>
+          </div>
         </div>
       </div>
     </main>

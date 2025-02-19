@@ -98,7 +98,7 @@ main {
 .container-header {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 30px;
 }
 .container-header img {
   width: 30px;
@@ -106,19 +106,73 @@ main {
 
 .projects-container {
   margin-top: 30px;
+  margin-bottom: 30px;
   display: flex;
+  gap: 30px;
+  max-width: 800px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.project {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: var(--secodary-background-color);
 }
-.project .title{
+.project .title {
   padding-left: 20px;
 }
-.thumbnail>img{
-  max-width: 400px;
+.thumbnail {
+  margin: 0;
+  padding: 0;
 }
-.stack > img{
-  width: 32px;
+.thumbnail > img {
+  max-width: 350px;
+}
+.stack {
+  padding-left: 20px;
+  padding: 5px;
+}
+.stack > img {
+  width: 42px;
+  height: 42px;
 }
 
+.example-label {
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 10px;
+  background-color: var(--primary-color);
+  color: #f9f9f9;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.example-label:hover {
+  background-color: #3c669f;
+}
+.modal {
+  background-color: var(--secodary-background-color);
+}
+.modal-header {
+  background-color: var(--background-color);
+  border-bottom: 2px solid var(--primary-color);
+  color: var(--text-color);
+  box-sizing: border-box;
+  height: 50px;
+}
+.modal-header h3{
+  color: var(--text-color);
+}
+.modal-header label{
+  border-left: 2px solid var(--primary-color);
+}
+
+.description {
+  max-width: 330px;
+  word-break: break-all;
+  padding: 10px;
+}
 footer {
   margin: 0;
   padding: 10px;
@@ -133,4 +187,20 @@ footer > div {
 }
 footer a {
   color: var(--text-color);
+}
+
+@media (max-width: 850px) {
+  .project {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+
+  .thumbnail > img {
+    width: 100%;
+    max-width: none;
+  }
+
+  .description {
+    max-width: 100%;
+  }
 }
