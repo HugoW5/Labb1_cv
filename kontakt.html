@@ -10,13 +10,13 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>CV - Hem</title>
+    <title>CV - Kontakt</title>
   </head>
   <body>
     <nav>
-      <a href="/index.html" class="active">Hem</a>
+      <a href="/index.html">Hem</a>
       <a href="/projekt.html">Projekt</a>
-      <a href="/kontakt.html">Kontakta mig</a>
+      <a href="/kontakt.html" class="active">Kontakta mig</a>
       <a href="/page1.html">1</a>
       <a href="/page2.html">2</a>
       <label class="theme-toggle" aria-label="Toggle darkmode">
@@ -27,58 +27,39 @@
     <main>
       <div class="top-container">
         <div class="container-header">
-          <h1>Hugo Wakt</h1>
-          <a href="https://github.com/HugoW5" target="_blank"
-            ><img
-              src="/img/icons/github-icon.svg"
-              alt="Github icon"
-              title="Github"
-          /></a>
-          <a
-            href="https://www.linkedin.com/in/hugo-wakt-32595a334/"
-            target="_blank"
-            ><img
-              src="/img/icons/linkedin_icon.svg"
-              alt="Linkedin icon"
-              title="Linkedin"
-          /></a>
-          <a href="mailto:hugo05.wakt@gmail.com"
-            ><img
-              src="/img/icons/email-1-svgrepo-com.svg"
-              alt="Email icon"
-              title="Email"
-          /></a>
+          <h1>Kontakta mig</h1>
         </div>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur
-          ipsa id recusandae temporibus ducimus repellendus totam eum, ad harum
-          asperiores dicta voluptates, voluptatibus dolores et, ullam explicabo.
-          Saepe consectetur, doloremque nisi commodi odit similique aliquam
-          assumenda quos eaque perspiciatis maiores?
-        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, in esse! Vitae nesciunt quasi atque ratione te</p>
         <div class="top-bottom-container">
           <div>
-            <h2>Utbildning</h2>
-            <ul>
-              <li>LBS Jönköping<span class="time-span">2021 - 2024</span></li>
-              <li>
-                Systemutvecklare.NET<span class="time-span">2024 - 2026</span>
-              </li>
-            </ul>
+            <h2>Kontaktuppgifter</h2>
+            <div class="contact-grid">
+              <div class="contact-item" title="Telefon nummer">
+                <img src="img/icons/phone-icon.svg" alt="telefon ikon" />
+                <span>073-263-3919</span>
+              </div>
+              <div class="contact-item" title="Email adress">
+                <img src="img/icons/email-1-svgrepo-com.svg" alt="Email ikon" />
+                <span>hugo05.wakt@gmail.com</span>
+              </div>
+              <div class="contact-item" title="Fax nummer">
+                <img src="img/icons/fax-icon.svg" alt="fax ikon" />
+                <span>073-263-3919</span>
+              </div>
+            </div>
           </div>
-          <div>
-            <h2>Arbetserfarenhet</h2>
-            <ul>
-              <li>
-                Ahlsell Jönköping<span class="time-span">2022 - 2023</span>
-              </li>
-              <li>
-                Arla kyllager Jönköping<span class="time-span"
-                  >2023 - 2025</span
-                >
-              </li>
-            </ul>
-          </div>
+        </div>
+        <div>
+          <h2>Meddelande</h2>
+          <form class="contact-form">
+            <label for="email">Email</label>
+            <input type="email" required name="email" id="email" />
+            <label for="name">Namn</label>
+            <input type="text" name="name" id="name" />
+            <label for="message">Meddelande</label>
+            <textarea name="message" id="messafe"></textarea>
+            <input type="submit" value="Skicka" />
+          </form>
         </div>
       </div>
     </main>
